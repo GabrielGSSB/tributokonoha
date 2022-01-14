@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+section{
+    justify-content: center;
+}
+#banner{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../assets/images/Konoha.jpg);
+    background-size: cover;
+    height: 400px;
+}
+h1{
+    font-size: 70px;
+    text-shadow: 3px 2px 1px #000;
+}
+h2{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+#hokages{
+    margin-left: 16px;
+}
+.hokage1{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.hokage1 img{
+    width: 150px;
+    height: 200px;
+    padding-bottom: 2px;
+}
+#main{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+article{
+    flex: 2;
+    padding-right: 40px;
+}
+aside{
+    flex: 1;
+    
+}
+.hokages-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+p{
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 20px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    zoom: 150%;
+}
+.clan-list{
+    display: flex;
+    justify-content: space-around;
+}
+.clan1{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.clan1 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-bottom: 2px;
+}
+footer{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.clan1 sub{
+    margin-top: 5px;
+}
+.footer-copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: center;
+}
+@media (max-width:610px){
+    .clan-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:500px){
+    #main {
+        display: block;
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+    article{
+        padding-right: 20px;
+    }
+    .hokage1{
+        padding: 1px;
+    }
+}
+@media (max-width:450px){
+    .clan-list{
+        justify-content: center;
+    }
+}
